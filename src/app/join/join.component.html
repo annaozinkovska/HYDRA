@@ -1,0 +1,53 @@
+<div class="Join">
+    <h2 class="Join_titile">JOIN HYDRA</h2>
+    <span class="Join_title2">Let’s Build <br>
+        Your VR Experience</span>
+
+    <form #userin="ngForm" (ngSubmit)="onSubmit(userin)">
+
+        
+
+
+            <input id="name" [ngClass]="" placeholder="First Name" name="name" ngModel #name='ngModel' required
+                minlength="3" pattern="[a-z A-Z]+$">
+            <p *ngIf="name.invalid && name.touched && name.errors?.['required']">The field name  must not be empty</p>
+            <p *ngIf="name.invalid && name.touched && name.errors?.['minlength']">
+                The name must contain more than {{name.errors?.['minlength']['requiredLength']}} characters.
+            </p>
+            <p *ngIf="name.invalid && name.touched && name.errors?.['pattern']">Only latin letters are allowed</p>
+
+            <input id="lastname" placeholder="Last Name" name="lastname" ngModel #name='ngModel' required minlength="3"
+                pattern="[a-z A-Z]+$">
+            <p *ngIf="name.invalid && name.touched && name.errors?.['required']">The Last name  must not be empty</p>
+            <p *ngIf="name.invalid && name.touched && name.errors?.['minlength']">
+                The Last Name  must contain more than {{name.errors?.['minlength']['requiredLength']}} characters.
+            </p>
+            <p *ngIf="name.invalid && name.touched && name.errors?.['pattern']">Only latin letters are allowed</p>
+
+            <input id="email" placeholder="Enter the Email" name="email" ngModel #email="ngModel" required email>
+            <p *ngIf="email.invalid && email.touched">
+                Enter correct email</p>
+
+            <input id="numbe" placeholder="Phone Number" name="number" ngModel #number="ngModel" required
+                minlength="9" pattern="[1-9]+$">
+            <p *ngIf="number.invalid && number.touched && number.errors?.['minlength']">
+                The name must contain more than {{number.errors?.['minlength']['requiredLength']}} characters.
+            </p>
+            <p *ngIf="number.invalid && number.touched && number.errors?.['required']">The Email must not be empty</p>
+
+            <p *ngIf="number.invalid && number.touched && number.errors?.['pattern']">Only latin letters are allowed</p>
+
+
+            <input id="Subject" placeholder="Subject" name="Subject" ngModel #subject="ngModel" required minlength="10">
+            <p *ngIf="subject.invalid && subject.touched && subject.errors?.['minlength']">
+                The name must contain more than {{subject.errors?.['minlength']['requiredLength']}} characters.
+            </p>
+            <input id="text" placeholder="Tell Us Something..." name="text" ngModel #text="ngModel" required
+                minlength="8">
+            <p *ngIf="text.invalid && text.touched && text.errors?.['minlength']">
+                The name must contain more than {{text.errors?.['minlength']['requiredLength']}} characters.
+            </p>
+            <button class="sing-in_button" type="submit">SEND TO HYDRA</button>
+        
+    </form>
+</div>

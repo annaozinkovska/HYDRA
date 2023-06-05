@@ -1,0 +1,334 @@
+.step1 {
+  height: 501px;
+  width: 100%;
+  padding: 0 35.01px;
+  margin-top: 12.01px;
+  box-sizing: border-box;
+  margin-bottom: 45px;
+  position: relative;
+}
+
+.app-to-edit {
+
+  display: grid;
+  grid-template-areas:
+    "  img    "
+    "   .   "
+    "  titleone "
+    " .      "
+    " titletwo "
+    "   . "
+    " title_button ";
+  grid-template-columns: 318.67px;
+  grid-template-rows: 277.04px 39.85px 49px 8px 39px 36px 52px;
+
+
+}
+
+.Line1 {
+  position: absolute;
+  width: 306px;
+  height: 603px;
+  left: -14px;
+  top: -62px;
+  background: url('../img_app/Vector\ 1.png') no-repeat;
+  background-size: 100%;
+  z-index: -1;
+
+}
+
+.Line3 {
+  position: absolute;
+  background: url('../img_app/Vector\ 3.png') no-repeat;
+  background-size: 100%;
+  width: 365px;
+  height: 532px;
+  left: 0px;
+  top: 95px;
+  z-index: -1;
+
+
+}
+
+.Line2 {
+  position: absolute;
+  background: url('../img_app/Vector\ 2.png') no-repeat;
+  background-size: 100%;
+  position: absolute;
+  width: 316px;
+  height: 709px;
+  left: 23px;
+  top: -65px;
+  z-index: -1;
+
+}
+
+.girl_in_vr {
+  grid-area: img;
+  background: url('../img_app/pexels-michelangelo-buonarroti-8728382\ 1.png') no-repeat;
+  background-size: 100%;
+  width: 318.67px;
+  height: 277.04px;
+  border-radius: 100px 100px 100px 240px;
+}
+
+
+
+.titleone {
+  grid-area: titleone;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  color: #FFFFFF;
+}
+
+.titletwo {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  color: #FFFFFF;
+  z-index: 2;
+  grid-area: titletwo;
+}
+
+.titletwo>p {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  padding-bottom: 10px;
+  background: linear-gradient(91.57deg, #C0B7E8 -1.02%, #8176AF 36.25%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+
+}
+
+.title_button {
+  width: 292px;
+  height: 52px;
+  background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+  border-radius: 40px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #343045;
+  grid-area: title_button;
+
+}
+
+
+
+
+
+.titleone>p {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  padding-bottom: 10px;
+
+  background: linear-gradient(91.57deg, #C0B7E8 -1.02%, #8176AF 36.25%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  // text-fill-color: transparent;
+}
+
+
+
+
+
+@media screen and (max-width: 490px) and (min-width:350px) {
+  .title_description {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1500px) and (min-width:490px) {
+  .app-to-edit {
+    width: 1250px;
+    height: 534px;
+    display: grid;
+    grid-template-areas:
+      " .  .  .  img "
+      "  driv driv  . img "
+      // "  . . . . "
+      " of of  .   img "
+      // " .  . . . "
+      "  title title . img"
+      // " . . . . "
+      " button arrow . img"
+      " .  .  .  img ";
+    grid-template-columns: 228px 228px 308px 490px;
+    grid-template-rows: 35px 56px 56px 72px 48px 54px;
+    align-content: space-between;
+  }
+
+  .girl_in_vr {
+    grid-area: img;
+    width: 490px;
+    height: 426px;
+
+
+  }
+
+  .titleone {
+    grid-area: driv;
+    align-items: flex-start;
+    align-content: center;
+    width: 456px;
+    height: 56px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    background: linear-gradient(91.57deg, #C0B7E8 -1.02%, #8176AF 36.25%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    z-index: 23;
+  }
+
+  .titleone>p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    color: #FFFFFF;
+    box-sizing: border-box;
+  }
+
+  .titletwo {
+    grid-area: of;
+    width: 402px;
+    height: 56px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 56px;
+  }
+
+  .titletwo>p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+  }
+
+  .title_button {
+    grid-area: button;
+    width: 214px;
+    height: 48px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .title_description {
+    grid-area: title;
+    width: 450px;
+    height: 72px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+  }
+
+  .arrow {
+    grid-area: arrow;
+    border: 3px solid #C0B7E8;
+    height: 0px;
+    width: 41px;
+    position: relative;
+  }
+
+  .arrow::after {
+    content: "";
+    border: 1.5px solid #C0B7E8;
+    height: 1px;
+    width: 25px;
+    transform: rotate(138deg);
+    position: absolute;
+    background-color: #C0B7E8;
+    border-radius: 6%;
+    top: 9px;
+    left: 23px;
+  }
+
+  .arrow::before {
+    content: '';
+    border: 1.5px solid #C0B7E8;
+    height: 1px;
+    width: 25px;
+    transform: rotate(45deg);
+    position: absolute;
+    background-color: #C0B7E8;
+    top: -8px;
+    left: 23px;
+    border-radius: 6%;
+  }
+
+  .Line1 {
+    position: absolute;
+   
+    z-index: -1;
+}
+
+.Line1{
+    position: absolute;
+    width: 609px;
+    height: 1203px;
+    left: 732px;
+    top: -225px;
+    z-index: -1;
+}
+
+
+  .Line2 {
+    position: absolute;
+    width: 578px;
+    height: 1135px;
+    left: 804px;
+    top: -321px;
+    z-index: -1;
+  }
+
+  .Line3 {
+    position: absolute;
+    width: 807px;
+    height: 832px;
+    left: 671px;
+    top: 223px;
+    z-index: -1;
+
+  }
+
+
+}

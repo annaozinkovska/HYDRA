@@ -1,0 +1,305 @@
+.step {
+    display: grid;
+    flex-direction: column;
+    // align-content: space-around;
+    height: 500px;
+    width: 100%;
+    grid-template-areas:
+        "  .   .   .      .   .   "
+        "  .   info   info  info   .   "
+        "  .   .   .      .   .   "
+        "  .   hydra   hydra  hydra   .   "
+        "  .   .   .      .   .   "
+        "  .   img img  img   .   "
+        "  .    .    .    .   .   "
+        "  . title title title  . "
+        "  .    .    .    .   .   "
+        "  . button  button button  . "
+        "  .    .    .    .   .   ";
+    grid-template-columns: 7% repeat(3, 25%) 7%;
+    grid-template-rows: 59px 32px 16px 32px 36px 358px 5px 246px 34px 56px 60px;
+   box-sizing: border-box;
+   margin: 1%;
+    margin-top: 59px;
+    position: relative;
+
+
+}
+
+
+
+.step2_INTRODUCTION {
+    align-items: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+    text-align: center;
+    color: #FFFFFF;
+    grid-area: info;
+}
+
+.step2_HYDRA_VR {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 32px;
+    /* identical to box height */
+    
+    text-align: center;
+    grid-area: hydra;
+    color: #FFFFFF;
+
+}
+
+.step2_arrow_dectop {
+    // position: absolute;
+   display: none;
+
+}
+
+.step2_arrow_dectop::after {
+    content: '';
+}
+
+.step2_arrow_dectop::before {
+    content: '';
+}
+
+.step2_info_decstop {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    grid-area: decstop;
+    color: #FFFFFF;
+}
+
+.step2_picture {
+    width: 100%;
+    // align-items: center;
+    // justify-content: center;
+    // display: flex;
+    grid-area: img;
+}
+
+.step2_picture_boy {
+    padding-top:51px ;
+    width: 336.79px;
+    height: 358px;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    background-size: 100%;
+    background: url("../img_app/Mask\ groupoy.png") no-repeat;
+    display: inline-block;
+
+
+}
+
+.step2_lorem>p {
+    font-family: 'Montserrat';
+    font-style: normal;
+
+    box-sizing: border-box;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 0 10%;
+}
+
+.step2_lorem {
+    grid-area: title;
+    width: 352px;
+    height: 246px;
+}
+
+.step2_button {
+    padding: 0 10%;
+    grid-area: button;
+}
+
+.step2_button>button {
+    width: 276px;
+    height: 56px;
+    background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+    border-radius: 40px;
+    align-items: center;
+    align-content: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+
+    color: #343045;
+
+
+
+}
+
+@media screen and (max-width: 490px) and (min-width:350px) {
+    .step2_arrow_dectop {
+        display: none;
+    }
+
+    .step2_info_decstop {
+        display: none;
+    }
+    .step2_ABOUT{
+        display: none;
+    }
+    .step2_HYDR{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 2002px)  and (min-width:490px){
+    .step {
+        margin-top: 94px;
+        grid-template-areas:
+            " info info info  .  decstop decstop decstop "
+            " . . . .            decstop decstop decstop "
+            " hydra hydra arrow . decstop  decstop decstop "
+            " .      .    .     .   .        .       . "
+            " img  img    img   . about       .      . "
+            " img  img    img  . titlevr titlevr     .   "
+            " img  img    img  .   .          .      .  "
+            " img  img    img  . title    title     title  "
+            " img  img    img  .   .          .      .  "
+            " img  img    img  . button button button "
+            " img  img    img  .     .    .       .  ";
+
+        grid-template-columns: 10.27% 10.27% 19.93% 7.68% 9.41% 3.88% 30.31%;
+        width: 1272px;
+        position: relative;
+        padding: 0 27px;
+        height: 757px;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-rows: 44px 10px 44px 97px 99px 44px 42px 228px 28px 48px 62.5px;
+        // margin-top: 120%;
+    }
+
+    .step2_info_decstop {
+        grid-area: decstop;
+        box-sizing: border-box;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+
+        color: #FFFFFF;
+
+    }
+
+    .step2_arrow_dectop {
+
+        grid-area: arrow;
+        border: 3px solid #C0B7E8;
+        height: 0px;
+        width: 173px;
+        position: relative;
+     
+    }
+
+    .step2_arrow_dectop::after {
+        content: '';
+        content: "";
+        border: 1.5px solid #C0B7E8;
+        height: 1px;
+        width: 25px;
+        transform: rotate(138deg);
+        position: absolute;
+        background-color: #C0B7E8;
+        border-radius: 7%;
+        top: 7px;
+        left: 154px;
+
+    }
+
+    .step2_arrow_dectop::before {
+        content: '';
+        border: 1.5px solid #C0B7E8;
+        height: 1px;
+        width: 25px;
+        transform: rotate(45deg);
+        position: absolute;
+        background-color: #C0B7E8;
+        border-radius: 6%;
+        top: -11px;
+        left: 154px;
+    }
+
+    .step2_lorem {
+
+        grid-area: title;
+        width: 630px;
+        height: 228px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+    }.step2_lorem>p{
+        padding:  0 0 ;
+    } 
+
+    .step2_button {
+
+        grid-area: button;
+        width: 214px;
+        height: 48px;
+    }
+
+    .step2_picture_boy {
+        grid-area: img;
+
+        margin-top: 34px;
+        width: 524px;
+        height: 557px;
+        background-size: 100%;
+
+    }
+
+    .step2_INTRODUCTION {
+        grid-area: info;
+    }
+
+    .step2_HYDRA_VR {
+        grid-area: hydra;
+    }
+    .step2_HYDR{
+        grid-area:titlevr ;
+        align-items: center;
+        width: 192px;
+height: 44px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 300;
+font-size: 36px;
+line-height: 44px;
+color: rgba(255, 255, 255, 0.95);
+
+    }
+    .step2_ABOUT{
+        width: 136px;
+height: 44px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 44px;
+/* identical to box height */
+
+grid-area: about;
+color: #FFFFFF;
+    }
+}

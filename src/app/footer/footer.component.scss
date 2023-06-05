@@ -1,0 +1,179 @@
+footer {
+    display: grid;
+    grid-template-areas:
+        " . logo logo ."
+        " . logo logo ."
+        " . logo logo ."
+        " . logo logo ."
+        "  .  .  .  .  "
+        "  . soc soc . "
+        " . Button   . "
+        " .  .  .  .   "
+        " . copy copy . "
+        " . copy copy . "
+        " . copy copy . ";
+        width: fit-content;
+        height: 800px;
+        position: relative;
+        top: 4296px;
+}
+
+.footerlabel>picture {
+    width: 184.98px;
+    height: 186.87px;
+    background: url("../img_app/FooterVector.png") no-repeat;
+    background-size: 100%;
+    grid-area: logo;
+
+}
+.footer_SOCIAL{
+    grid-area: soc;
+}
+.footer_SOCIALIZE {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    
+}
+
+.footer_SOCIAL_link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer_facebook {
+ background: url("../img_app/footerfacebook.png") no-repeat;
+    background-size: 100%;
+    width: 32px;
+    height: 32px;
+}
+
+.footer_twitter {
+    background: url("../img_app/footertwitter.png") no-repeat;
+    background-size: 100%;
+    width: 32px;
+    height: 32px;
+}
+
+.footer_linkedin {
+    background: url("../img_app/footerlinkedin.png") no-repeat;
+    background-size: 100%;
+    width: 32px;
+    height: 32px;
+}
+
+.footer_youtube {
+    background: url("../img_app/footeryoutube.png") no-repeat;
+    background-size: 100%;
+    width: 32px;
+    height: 32px;
+}
+
+.footer_instagram {
+    background: url("../img_app/footerinstagram.png") no-repeat;
+    background-size: 100%;
+    width: 32px;
+    height: 32px;
+}
+
+.footer_pinterest {
+    background: url("../img_app/footerpinterest.png") no-repeat;
+    background-size: 100%;
+    width: 32px;
+    height: 32px;
+}
+
+.footer_button {
+    grid-area: button;
+    width: 295px;
+    height: 55px;
+    background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+    border-radius: 40px;
+
+}
+.copyrite{
+    grid-area: copy;
+}
+
+
+
+
+@media screen and (max-width: 490px) and (min-width:350px) {
+.footer_document{
+    display: none;
+}
+.footer_url{
+    display: none;
+}   
+}
+@media screen and (max-width: 1090px) and (min-width:500px) {
+  
+
+footer {
+    display: grid;
+    grid-template-areas:
+        " logo logo   . .url  .  . doc  .  . sos sos"
+        " logo logo   . .url  .  . doc  .  . sos sos"
+        " logo logo   . .url  .  . doc  .  . sos sos"
+        " logo logo   . .url  .  . doc  .  . sos sos"
+        " logo logo   . .url  .  . doc  .  . sos sos"
+        " logo logo   . .url  .  . .    .  . sos sos"
+        " logo logo   . . .   .  . .    .  . .  .   "
+        "  .    .     . . .   .  . .    .  . .  .   "
+        ".                  copy                  . ";
+
+}
+
+.footerlabel {
+    grid-area: logo;
+    background: url('../img_app/FooterVector.png');
+    background-size: 100%;
+    width: 185px;
+height: 187px;
+}
+
+.footer_url {
+    width: 134px;
+    height: 192px;
+    display: flex;
+    justify-content: space-around;
+    grid-area: url;
+
+}
+
+.footer_url>h5 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #FFFFFF;
+}
+
+.footer_document {
+    grid-area: doc;
+    width: 109px;
+    height: 149px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.footer_document>h5 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.footer_SOCIAL {
+    grid-area: soc;
+
+}}

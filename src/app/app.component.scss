@@ -1,0 +1,302 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+  }
+//   button:hover {
+//     cursor: pointer;
+//     background: linear-gradient(90deg, #7c66dd 0%, #8176AF 100%);
+// }
+
+//   button.pointer {
+//         cursor: pointer;
+//         background: linear-gradient(90deg, #7c66dd 0%, #8176AF 100%);
+
+//         }
+  
+  body{
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(circle, rgba(58,52,86,1) 35%, rgba(33,30,46,1) 100%);
+  }
+  .no-scroll {
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+// .background{
+
+//  max-height: 7000px;
+//  min-height: 3000px;
+//     position: relative;
+// max-width: 200%;
+// min-width: 100%;
+// background-size: cover;
+// display: block;
+// height: 1024px;
+// z-index: 0;
+// background: #302C42;
+// background-size: cover;
+// }
+
+
+.header {
+    grid-template-areas:
+        "  . .     .   .     .    .  "
+        " . logo .  .   .   .   ."
+        " . logo name . .   menu ."
+        " . logo name . .   menu .";
+    grid-template-rows: 23.66px 27px 23px 25px;
+flex-direction: row;
+    display: grid;
+    width:100%;
+    height: 108px;
+    position: relative;
+
+}
+
+.header_logo {
+    background: url('./img_app/Frame.png')no-repeat;
+    background-size: 100%;
+    width: 69px;
+    height: 59.88px;
+    grid-area: logo;
+    // left: 20px;
+    // top: 25.66px;
+    // position: absolute;
+}
+
+.header_name {
+    width: 46px;
+    height: 28px;
+    // padding-top: 42px; 
+    grid-template-areas:
+        "h y d r a ";
+    display: grid;
+    // position: absolute;
+    // left: 201px;
+    grid-area: name;
+    // top: 52px;/
+    // left: 100px;
+
+}
+
+.header_name>.h {
+    background: url('./img_app/Vectorh.png') no-repeat;
+    background-size: 100%;
+    grid-area: h;
+    width: 7px;
+    height: 28px;
+}
+
+.header_name>.y {
+    width: 8.39px;
+    background: url('./img_app/Vectory.png') no-repeat;
+    background-size: 100%;
+    grid-area: y;
+    height: 28px;
+
+}
+
+.header_name>.d {
+    width:
+        6.98px;
+    background: url('./img_app/Vectord.png') no-repeat;
+    background-size: 100%;
+    grid-area: d;
+    height: 28px;
+
+}
+
+.header_name>.r {
+    width: 7px;
+    background: url('./img_app/Vectorr.png') no-repeat;
+    background-size: 100%;
+    grid-area: r;
+    height: 28px;
+
+}
+
+.header_name>.a {
+    width: 8.39px;
+    background: url('./img_app/Vectora.png') no-repeat;
+    background-size: 100%;
+    grid-area: a;
+    height: 28px;
+
+}
+
+.header_menu {
+    width: 33px;
+    height: 26px;
+    // position: absolute;
+    // left: 85.72%;
+    // top: 1%;
+    grid-area: menu;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-sizing: border-box;
+    // align-items: e;
+}
+
+.header_menu_p {
+
+    background: linear-gradient(90deg, #C0B7E8 -15.79%, #8176AF 100%);
+    border-radius: 40px;
+    border-color: transparent;
+    top: 64.14px;
+    width: 22px;
+    height: 3.71px;
+    grid-area: menu;
+
+    box-sizing: border-box;
+    // left: 20%;
+
+}
+
+.header_menu_p::after {
+    content: "";
+    background: linear-gradient(90deg, #C0B7E8 -15.79%, #8176AF 100%);
+    border-radius: 40px;
+    width: 26px;
+    position: absolute;
+    top: 58px;
+    height: 3.71px;
+
+}
+
+.header_menu_p::before {
+    content: "";
+    background: linear-gradient(90deg, #C0B7E8 -15.79%, #8176AF 100%);
+    border-radius: 40px;
+    width: 26px;
+    position: absolute;
+    top: 75.23px;
+    height: 3.71px;
+
+}
+
+@media screen and (max-width: 490px) and (min-width:350px) {
+    .header_menu_decstop {
+        display: none;
+    }
+
+    .header_contact_decstop {
+        display: none;
+    }
+
+    .header_JOIN_decstop {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1500px) and (min-width:490px) {
+    .header_menu {
+        display: none;
+    }
+    .header_logo{
+        width: 102px;
+height: 103px
+    }
+
+    .header_name>.h {
+        background: url('./img_app/Vectorh.png') no-repeat;
+        background-size: 100%;
+        grid-area: h;
+        width: 11.57px;
+    }
+
+    .header_name>.y {
+        width: 14.4px;
+        background: url('./img_app/Vectory.png') no-repeat;
+        background-size: 100%;
+        grid-area: y;
+    }
+
+    .header_name>.d {
+        width: 11.57px;
+        background: url('./img_app/Vectord.png') no-repeat;
+        background-size: 100%;
+        grid-area: d;
+    }
+
+    .header_name>.r {
+        width: 11.57px;
+        background: url('./img_app/Vectorr.png') no-repeat;
+        background-size: 100%;
+        grid-area: r;
+    }
+
+    .header_name>.a {
+        width: 13.4px;
+        background: url('./img_app/Vectora.png') no-repeat;
+        background-size: 100%;
+        grid-area: a;
+    }
+
+    .header_menu_decstop {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        grid-area: menu;
+        padding-top: 29px;
+
+    }
+
+    .p {
+        color: white;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        text-decoration: none;
+
+    }
+
+    .header {
+        grid-template-areas:
+
+            " logo name .  menu .   contact join ";
+        grid-template-columns: 102px 78px 205px 316px 140px 154px  155px;
+grid-template-rows:108px ;
+        display: grid;
+        width:max-content;
+        height: 108px;
+        position: relative;
+        padding: 79px 84px;
+
+    }
+
+    .header_contact_decstop {
+        grid-area: contact;
+        box-sizing: border-box;
+        width: 154px;
+        height: 48px;
+        border: 2px solid #FFFFFF;
+        border-radius: 40px;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    .header_contact_decstop:hover{
+        background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+
+    }
+    .header_JOIN_decstop{
+        grid-area: join;
+        box-sizing: border-box;
+        width: 155px;
+        height: 48px;
+        border: 2px solid #FFFFFF;
+        border-radius: 40px;
+        background-color: transparent;
+        margin-left: 38px;
+        cursor: pointer;
+    }
+    .header_JOIN_decstop:hover{
+        background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+    }
+}

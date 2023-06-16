@@ -1,93 +1,123 @@
-.step3_Slaider {
-    width:max-content; 
-    margin-left:6% ;  
-    height: 167px;
-    background: radial-gradient(50% 2900.76% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211E2E 100%)
-        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
-    ;
+
+
+
+.slaider_bloc{
+    background: radial-gradient(50% 2900.76% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211E2E 100%);    
     box-shadow: 0px 4px 4px rgba(192, 183, 232, 0.01);
-    border-radius: 90px;
+    border-radius: 90px; 
+    width: 345px;
+    height: 109px;
+    margin:  23px 11%; 
+    position: relative;
+    display: block;
+  }
 
-} 
-
-.step_carusel-location ,.step_carusel-phone , .step_carusel-emeil{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0 12px;
-    
-
-}
-
-.step_carusel-location>div , .step_carusel-phone>div .step_carusel-emeil > div{
+.step3_mobile>div {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.step_carusel-location>picture {
-    background: url('../img_app/claider1Location-Icon.png') no-repeat;
-    background-size: 100%;
-    width: 70px;
-    height: 70px;
-    margin-right: 23px;
+// .slaider_mobile>img {
+//     background-size: 100%;
+//     width: 70px;
+//     height: 70px;
+//     margin-right: 23px;
+// }
 
-}
-.step_carusel-phone >picture {
-    background: url('../img_app/claider2phone.png') no-repeat;
-    background-size: 100%;
-    width: 70px;
-    height: 70px;
-    margin-right: 23px;
+// .step_carusel-location,
+// .step_carusel-phone,
+// .step_carusel-emeil {
+//     display: flex;
+//     flex-direction: row;
+//     align-items: center;
+//     padding: 0 12px;
 
-}.step_carusel-emeil >picture {
-    background: url('../img_app/claider1emeil.png') no-repeat;
-    background-size: 100%;
-    width: 70px;
-    height: 70px;
-    margin-right: 23px;
 
-}
-.step_carusel-location> div>span , .step_carusel-phone > div>span , .step_carusel-emeil > div>span{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
-    color: #FFFFFF;
+// }
 
-}
+// .step_carusel-location>div,
+// .step_carusel-phone>div .step_carusel-emeil>div {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+// // }
 
-.step_carusel-location> div > p ,.step_carusel-phone > div > p , .step_carusel-emeil > div > p {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    color: #FFFFFF;
-}
+// // .step_carusel-location>picture {
+// //     background: url('../img_app/claider1Location-Icon.png') no-repeat;
+// //     background-size: 100%;
+// //     width: 70px;
+// //     height: 70px;
+// //     margin-right: 23px;
 
-.step_carusel-location::after , .step_carusel-phone::after {
-    content: '';
-    width: 1px;
-    height: 116.5px;
-    border: 1px solid rgba(192, 183, 232, 0.33);
-}
-.step3_Slaider{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-@media screen and (min-width:350px) and (max-width:450px) {
-    .step3_Slaider{
-        display: none;
-    }
-    
-    
-}
+// }
+
+// .step_carusel-phone> {
+//     background: url('../img_app/claider2phone.png') no-repeat;
+//     background-size: 100%;
+//     width: 70px;
+//     height: 70px;
+//     margin-right: 23px;
+
+// }
+
+// .step_carusel-emeil>img {
+//     background: url('../img_app/claider1emeil.png') no-repeat;
+//     background-size: 100%;
+//     width: 70px;
+//     height: 70px;
+//     margin-right: 23px;
+
+// }
+
+// .step_carusel-location>div>span,
+// .step_carusel-phone>div>span,
+// .step_carusel-emeil>div>span {
+//     font-family: 'Montserrat';
+//     font-style: normal;
+//     font-weight: 700;
+//     font-size: 24px;
+//     line-height: 29px;
+//     color: #FFFFFF;
+
+// }
+
+// .step_carusel-location>div>p,
+// .step_carusel-phone>div>p,
+// .step_carusel-emeil>div>p {
+//     font-family: 'Montserrat';
+//     font-style: normal;
+//     font-weight: 400;
+//     font-size: 14px;
+//     line-height: 17px;
+//     color: #FFFFFF;
+// }
+
+// .step_carusel-location::after,
+// .step_carusel-phone::after {
+//     content: '';
+//     width: 1px;
+//     height: 116.5px;
+//     border: 1px solid rgba(192, 183, 232, 0.33);
+// }
+
+// .step3_Slaider {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-around;
+// }
+
+// @media screen and (min-width:350px) and (max-width:450px) {
+//     .step3_Slaider {
+//         display: none;
+//     }
+
+
+// }
+
 @media screen and (min-width:490px) and (max-width:2000px) {
-    .step3_mobile{
+    .step3_mobile {
         display: none;
     }
-    
+
 }

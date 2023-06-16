@@ -1,52 +1,66 @@
 footer {
+
     display: grid;
     grid-template-areas:
-        " . logo logo ."
-        " . logo logo ."
-        " . logo logo ."
-        " . logo logo ."
-        "  .  .  .  .  "
-        "  . soc soc . "
-        " . Button   . "
-        " .  .  .  .   "
-        " . copy copy . "
-        " . copy copy . "
-        " . copy copy . ";
-        width: fit-content;
-        height: 800px;
-        position: relative;
-        top: 4296px;
+        " . logo ."
+        "  .  .    .  "
+        "  . soc  . "
+        "  .  .    .  "
+        "  .  link  .  "
+        "  .  .    .  "
+        "  .  button   . "
+        " .  .  .   "
+        "  .  lin    .  "
+        "  .  .    .  "
+        " . copy  . ";
+    width: 100%;
+    // justify-content: center;
+    justify-content: space-evenly;
+    // bottom: 1%;
+    // bottom: 3px;
+    position: relative;
+    height: 709px;
+    // margin: 1px 3px;
+    grid-template-columns: 51px 70% 51px;
+    grid-template-rows: 187px 29px 20px 29px 20px 47px 55px 61px 1px 38px 97px;
 }
 
-.footerlabel>picture {
+.footerlabel {
     width: 184.98px;
     height: 186.87px;
     background: url("../img_app/FooterVector.png") no-repeat;
     background-size: 100%;
     grid-area: logo;
+    margin:  12px 76px;
 
 }
-.footer_SOCIAL{
+
+.footer_SOCIAL {
+
     grid-area: soc;
 }
+
 .footer_SOCIALIZE {
+    text-align: center;
+    width: 100%;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
     color: #FFFFFF;
-    
+
 }
 
 .footer_SOCIAL_link {
+    grid-area: link;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
 .footer_facebook {
- background: url("../img_app/footerfacebook.png") no-repeat;
+    background: url("../img_app/footerfacebook.png") no-repeat;
     background-size: 100%;
     width: 32px;
     height: 32px;
@@ -89,91 +103,152 @@ footer {
 
 .footer_button {
     grid-area: button;
-    width: 295px;
+    width: 70%;
     height: 55px;
     background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
     border-radius: 40px;
+    text-align: center;
+    align-content: center;
+    margin: 0 19%;
+box-sizing: border-box;
+    padding:0  1%;
+    // width: 100%;
 
 }
-.copyrite{
+
+.footer_line {
+    grid-area: lin ;
+    background-color: #C0B7E8;
+    width: 70%;
+    height: 1px;
+    // margin: 23px auto;
+    transform:rotate(180deg) ;
+
+}
+
+.copyrite {
+    text-align: center;
+    width: 100%;
     grid-area: copy;
 }
 
 
 
 
+
 @media screen and (max-width: 490px) and (min-width:350px) {
-.footer_document{
-    display: none;
-}
-.footer_url{
-    display: none;
-}   
-}
-@media screen and (max-width: 1090px) and (min-width:500px) {
-  
+    .footer_document {
+        display: none;
+    }
 
-footer {
-    display: grid;
-    grid-template-areas:
-        " logo logo   . .url  .  . doc  .  . sos sos"
-        " logo logo   . .url  .  . doc  .  . sos sos"
-        " logo logo   . .url  .  . doc  .  . sos sos"
-        " logo logo   . .url  .  . doc  .  . sos sos"
-        " logo logo   . .url  .  . doc  .  . sos sos"
-        " logo logo   . .url  .  . .    .  . sos sos"
-        " logo logo   . . .   .  . .    .  . .  .   "
-        "  .    .     . . .   .  . .    .  . .  .   "
-        ".                  copy                  . ";
-
+    .footer_url {
+        display: none;
+    }
 }
 
-.footerlabel {
-    grid-area: logo;
-    background: url('../img_app/FooterVector.png');
-    background-size: 100%;
-    width: 185px;
-height: 187px;
+@media screen and (max-width: 2545px) and (min-width:490px) {
+
+
+    footer {
+        
+        width: 100%;
+        height:  fit-content;
+        position: relative;
+        display: grid;
+        grid-template-areas:
+            " logo . line1 . ser . line2 . sitmap . line3 . link"
+            "    . .   .   . .   . .     .  .     .   .   . button"
+            " line4 line4 line4 line4 line4 line4 line4 line4 line4 line4 line4 line4 line4  "
+            "  . . . . . . . . . . . . . "
+            "   .  . copy copy copy copy copy copy copy copy . . . ";
+        grid-template-rows: 185px 1px 49px 17px;
+        grid-template-columns: 185px 100px 1px 81px 134px 104px 1px 107px 109px 69px 1px 71px 292px;
+        top: auto;
+    }
+
+    .footerlabel {
+        grid-area: logo;
+        background: url('../img_app/FooterVector.png');
+        background-size: 100%;
+        width: 185px;
+        height: 187px;
+    }
+
+    .line1 {
+        grid-area: line1;
+        width: 1px;
+        height: 196px;
+        background-color: #C0B7E8;
+    }
+
+    .line2 {
+        grid-area: line2;
+        width: 1px;
+        height: 196px;
+        background-color: #C0B7E8;
+    }
+
+    .line3 {
+        grid-area: line3;
+        width: 1px;
+        height: 196px;
+        background-color: #C0B7E8;
+    }
+
+    .footer_line4 {
+        grid-area: line4;
+        width: 1269px;
+        height: 0px;
+        background-color: #C0B7E8;
+        transform: rotate(180deg);
+    }
+
+    .footer_url {
+        width: 134px;
+        height: 192px;
+        display: flex;
+        justify-content: space-around;
+        grid-area: ser;
+        flex-direction: column;
+
+    }
+
+    .footer_url>h5 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+
+        color: #FFFFFF;
+    }
+
+    .footer_document {
+        flex-direction: column;
+        grid-area: sitmap;
+        width: 109px;
+        height: 149px;
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    .footer_document>h5 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+
+    .footer_SOCIAL {
+        grid-area: link;
+
+    }
+
+
+    .copyrite {
+        grid-area: copy;
+    }
 }
-
-.footer_url {
-    width: 134px;
-    height: 192px;
-    display: flex;
-    justify-content: space-around;
-    grid-area: url;
-
-}
-
-.footer_url>h5 {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-
-    color: #FFFFFF;
-}
-
-.footer_document {
-    grid-area: doc;
-    width: 109px;
-    height: 149px;
-    display: flex;
-    justify-content: space-around;
-
-}
-
-.footer_document>h5 {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    color: #FFFFFF;
-}
-
-.footer_SOCIAL {
-    grid-area: soc;
-
-}}

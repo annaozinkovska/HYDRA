@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { NgForm } from '@angular/forms';
-
+import { SlideUsersInterface } from '../PostSlider/types/slideusers.interface';
+import { HttpClient } from '@angular/common/http';
 @Component({
   selector: 'app-join',
   templateUrl: './join.component.html',
@@ -16,7 +17,7 @@ export class JoinComponent {
     text:String,
     }
 
-  onSubmit( data:NgForm){
+   onSubmit( data:NgForm){
 this.user.name=data.value.name
 this.user.lastname=data.value.lastname
 this.user.email=data.value.email
@@ -26,5 +27,22 @@ this.user.text=data.value.text
  console.log(this.user);
   
 }
+  @Input() slides: SlideUsersInterface[]=[]
+
+  constructor( private http:HttpClient ){
+    this.http.get('http://localhost:4234')
+    .subscribe((data)=>console.log(data));
+    
+  }
+
+  addusers(data: any){
+    this.slides=data;
+    console.log(this.slides);
+    
+  }
+
+// inserttodb(){
+// this.http.post.(this.user.name: Object)
+// }
 
 }

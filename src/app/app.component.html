@@ -1,7 +1,4 @@
-<script>
-    const screenWidth = window.screen.width
-    document.getElementById("background").style.width = screenWidth
-</script>    <header class="header">
+   <header class="header">
         <picture class="header_logo">
         </picture>
         <span class="header_name">
@@ -12,22 +9,31 @@
             <picture class="a"></picture>
         </span>
         <span class="header_menu_decstop">
-            <p class="p" href="header_ABOUT" routerLink="/ABOUT">ABOUT</p>
-            <p class="p" href="header_SERVICES" routerLink="/services">SERVICES</p>
-            <p class="p" href="header_TECHNOLOGIES" routerLink="/TECHNOLOGIES">TECHNOLOGIES</p>
-            <p class="p" href="header_HOW">HOW</p>
-          
-
+            <a class="p" href="" routerLink="/admin"  routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact:true}">Admin</a>
+            <a class="p" href="" routerLink="/about"  routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact:true}">ABOUT</a>
+            <a class="p" href="" routerLink="/services"
+ routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">SERVICES</a>
+            <a class="p" href="" routerLink="/TECHNOLOGIES" routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact:true}">TECHNOLOGIES</a>
+            <a class="p" href="" routerLink="/join" routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact:true}">TECHNOLOGIES</a>
+            <a class="p" href="header_HOW">HOW</a>
         </span>
         <button class="header_contact_decstop" routerLink="/CONTACT">CONTACT US</button>
         <button class="header_JOIN_decstop" routerLink="/join">JOIN HYDRA</button>
-        <div class="header_menu">
+        <a  class="header_menu"  href="/menu"   routerLink="/menu">
+            
+        <!--(click)="showmenu()" routerLink="/menu" routerLinkActive="active-link" (isActiveChange)="this.onRouterLinkActive($event)"> -->
+       
             <p class="header_menu_p"></p>
-        </div>
+        </a>
+            <!-- <ng-template #menu ></ng-template> -->
+    
     </header>
 
-    <app-services>
-
-
-    </app-services>
+    <router-outlet>
+    </router-outlet>
+    
 

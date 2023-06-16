@@ -1,50 +1,26 @@
 
-    <div class="css-slider-wrapper">
-        <input type="radio" name="slider" class="slide-radio1" checked id="slider_1">
-        <input type="radio" name="slider" class="slide-radio2" id="slider_2">
-        <input type="radio" name="slider" class="slide-radio3" id="slider_3">
-        <input type="radio" name="slider" class="slide-radio4" id="slider_4">
-        <div class="slider-pagination">
-          <label for="slider_1" class="page1"></label>
-          <label for="slider_2" class="page2"></label>
-          <label for="slider_3" class="page3"></label>
-          <label for="slider_4" class="page4"></label>
-        </div>
-        
-        <!-- ЗДЕСЬ ВНУТРИ LABEL ПОЛОЖИШЬ НУЖНЫЕ ТЕБЕ СТРЕЛКИ --> 
-        <div class="next control">
-          <label for="slider_1" class="numb1">&gt;</label>
-          <label for="slider_2" class="numb2">&gt;</label>
-          <label for="slider_3" class="numb3">&gt;</label>
-          <label for="slider_4" class="numb4">&gt;</label>
-        </div>
-        <div class="previous control">
-          <label for="slider_1" class="numb1">&lt;</label>
-          <label for="slider_2" class="numb2">&lt;</label>
-          <label for="slider_3" class="numb3">&lt;</label>
-          <label for="slider_4" class="numb4">&lt;</label>
-        </div>
-        <!-- ЗДЕСЬ ВНУТРИ LABEL ПОЛОЖИШЬ НУЖНЫЕ ТЕБЕ СТРЕЛКИ --> 
-        
-        
-        <div class="slider slide1">
-          <div>
-            <h2>Css Based slider</h2>
-          </div>
-        </div>
-        <div class="slider slide2">
-          <div>
-            <h2>CSS Slider without use of any javascript or jQuery</h2>
-          </div>
-        </div>
-        <div class="slider slide3">
-          <div>
-            <h2>Full screen animation slider</h2>
-          </div>
-        </div>
-        <div class="slider slide4">
-          <div>
-            <h2>css3 slider</h2>
-          </div>
-        </div>
-      </div>
+ <div class="Step_posts">  
+  <h2 class="Step_posth2">WHY BUILD</h2>
+  <p class="Step_postP">WITH HYDRA?</p>
+  <div class="Post_arrow_dectop"></div>
+
+<div class="Post_text_dectop">Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat nibh sed pulvinar
+    proin gravida hendrerit lectus. Mi sit amet mauris commodo quis imperdiet massa tincidunt nunc. Viverra aliquet eget
+    sit amet tellus. Ornare lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae. </div>
+  <div class="Post">
+
+      <div *ngFor="let slide of slides"> 
+        <div class="usersa">
+        <div class="titleua">{{slide.titleua}}</div>
+        <div class="titleeng">{{slide.titleeng}}</div>
+       <div class="textua">{{slide.textua}}</div>
+       <div class="texteng">{{slide.texteng}}</div>
+        <div class="urlimg" [style.background-image]="'url(' + slide.urlimg + ')'"></div> 
+        <button class="slaiders_button"><a class="hrefbutton"[style.href]="'(' + slide.hrefbutton + ')'">TRY IT NOW</a></button> 
+
+ </div></div>
+</div> 
+<div class="post_mob" style="position: relative;background: radial-gradient(50% 50% at 50% 50%, #433D60 0%, #211E2E 100%);
+border-radius: 40px;width: 310px; height: 511px; border-radius: 40px;   padding: 12px;  box-sizing: border-box; margin: 0 auto">
+  <post-slider style="width: 290px; height: 200px;" [slides]="slides"></post-slider>
+</div></div>

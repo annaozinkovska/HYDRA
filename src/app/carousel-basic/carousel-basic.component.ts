@@ -10,8 +10,9 @@ import { HttpClient } from '@angular/common/http';
 
 })
 export class CarouselBasicComponent {
-	@Input()carusel={
-		
-	}
+	@Input() title = '';
+	@Input() text = '';
+	@Input() img = '';
 
+	
 }

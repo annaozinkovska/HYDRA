@@ -1,4 +1,5 @@
-   <div class="step1">
+<div class="step_toEdit">
+  <div class="step1">
      <picture class="Line1"></picture>
         <picture class="Line2"></picture>
         <picture class="Line3"></picture>
@@ -25,6 +26,44 @@
     <button class="title_button">
         BUILD YOUR WORLD
     </button>
+    
+    
+</div>
+<div class="step3_Slaider">
+    <div class="step_carusel-location">
+        <img src="../img_app/claider1Location-Icon.png" alt="">
+        <div><span>Pay Us a Visit</span>
+            <p>Union St, Seattle, WA 98101, United States</p>
+        </div>
+    </div>
+    <div class="step_carusel-phone">
+        <img src="../img_app/claider2phone.png" alt="">
+        <div><span>Pay Us a Visit</span>
+            <p>Union St, Seattle, WA 98101, United States</p>
+        </div>
+    </div>
+    <div class="step_carusel-emeil">
+        <img src="../img_app/claider1emeil.png" alt="">
+        <div> <span>Pay Us a Visit</span>
+            <p>Union St, Seattle, WA 98101, United States</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="step3_mobile">
+        <div class="slaider_mobile" (click)="changeslaid()">
+            <app-carousel  *ngFor= "let contact of contacts" [title]="contact.title" [text]="contact.text" [img]="contact.img" ></app-carousel>
+     
+        </div>
+    </div> 
+    <button class="Slaider1_prev" (click)="prev()" ></button>
+    
+    <button class="Slaider1_next" (click)="next()"></button>
+   
+
+
 
 </div>
 </div>
+ 

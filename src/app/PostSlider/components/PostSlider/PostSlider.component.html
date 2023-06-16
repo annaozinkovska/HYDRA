@@ -1,0 +1,23 @@
+<div class="slider">
+  <div>
+    <div (click)="goToPrevious()" class="leftArrow">❰</div>
+    <div (click)="goToNext()" class="rightArrow">❱</div>
+  </div>
+  <!-- <div class="titleua">{{getCurrenttitleua()}}</div> -->
+ <div class="titleeng">{{getCurrentSlidetitleeng()}}</div>
+<!-- <div class="textua">{{  getCurrenttextua() }}</div> -->
+<div class="texteng">{{getCurrentSlidetexteng()}}</div>
+<div class="urlimg" [ngStyle]="{ 'background-image': getCurrenturlimg() }"></div>
+<button><a class="hrefbutton" [ngStyle]="{ 'href': getCurrentSlidehrefbutton() }">TRY IT NOW</a></button>
+  
+  <div class="dotsContainer">
+    <div
+      *ngFor="let slide of slides; let slideIndex = index"
+      class="dot"
+      (click)="goToSlide(slideIndex)"
+    >
+      ●<a href=""></a>
+      
+    </div>
+  </div>
+</div>

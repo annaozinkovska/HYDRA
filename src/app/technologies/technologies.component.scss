@@ -1,0 +1,171 @@
+.Technologies {
+    
+    box-shadow: 0px 4px 4px rgba(192, 183, 232, 0.01);
+    background-image: url('../img_app/MaskTehnoGroup.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 348px;
+    height: 163.35px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    border-radius: 60px;
+    flex-direction: column;
+    position: relative;
+    margin: 23px 0;
+    justify-content: center;
+    margin-left:15% ;
+}
+.step4{
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    margin-top: 89%;
+    width: 100%;
+    height: 500px;
+
+
+}
+    
+
+.TechnologieP   {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFFFFF;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.TechnologieH2{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFFFFF;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 490px) and (min-width:350px) {
+    .Technologies_DESTOP {
+        display: none;
+    }
+    .Technologies_DESTOP_invest{ display: none;}
+}
+
+@media screen and (max-width: 2532px) and (min-width:490px) {
+    .Technologie{
+        display: none;
+    }
+
+    .Technologies_mob {
+        display: none;
+    }
+
+    .Technologies_DESTOP {
+        background-image: url('../img_app/MaskTehnoGroup.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 1278px;
+        height: 303px;
+        box-shadow: 0px 4px 4px rgba(192, 183, 232, 0.01);
+        border-radius: 160px;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        border-radius: 60px;
+        flex-direction: column;
+        padding-top: 59px;
+        margin: 20px auto;
+    }
+
+    .TechnologieP{
+        font-style: normal;
+        font-weight: 300;
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    .TechnologieH2{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+
+    }
+
+    .Technologies_DESTOP_invest {
+        display: flex;
+        flex-direction: row;
+        max-width: 24px auto;
+        height: 250px;
+        width: max-content;
+        margin:auto 15% ;
+
+    }
+
+    .Technologies_DESTOP_invest>img {
+        width: 174px;
+        height: 174px;
+        margin: 10px 23px;
+        margin-left: 12%;
+    }
+    .Technologies {
+    
+        box-shadow: 0px 4px 4px rgba(192, 183, 232, 0.01);
+        background-image: url('../img_app/MaskTehnoGroup.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 348px;
+        height: 163.35px;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        border-radius: 60px;
+        flex-direction: column;
+        // padding-top: 59px;
+        // margin: 23px 11%;
+    }
+    .step4{
+        margin: 98px 11%;
+    box-sizing: border-box;
+    position: relative;
+    display:block;
+    margin-left: 3%;
+    
+    
+    }
+        
+    
+    p {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 25px;
+        color: #FFFFFF;
+    }
+    
+    h2 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 25px;
+        color: #FFFFFF;
+    }
+
+
+}

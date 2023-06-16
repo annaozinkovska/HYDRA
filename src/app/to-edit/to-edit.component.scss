@@ -1,3 +1,14 @@
+.step_toEdit{
+  margin:  23px 11%;
+  height: fit-content;
+  width: max-content; 
+  position: relative;
+  display: block;
+  box-sizing:border-box;
+  margin-bottom: 14%;
+  // padding: 23px  0 ;
+}
+
 .step1 {
   height: 501px;
   width: 100%;
@@ -62,6 +73,10 @@
   z-index: -1;
 
 }
+
+  .step3_Slaider {
+      display: none;
+  }
 
 .girl_in_vr {
   grid-area: img;
@@ -153,7 +168,102 @@
   // text-fill-color: transparent;
 }
 
+.step3_mobile {
+  width: 378px;
+  // bottom: 34px;
+  // margin: 230px 11%;
+  position: absolute;
+  // top: -3px;
+  left: -45px ;
+  height: 134px;
+  display: block;
+  margin: 10px 10%;
+  overflow: hidden;
+  margin-bottom: 98px;
+  
+}
 
+.slaider_mobile {
+  left: 0px !important;
+  display: flex;
+  align-content: flex-end;
+  width: 692px;
+  height: 109px;
+  position: absolute;
+
+}
+.Slaider1_prev{
+  border: #FFFFFF solid;
+  border-radius: 50%;
+  position: absolute;
+  width: 30px;
+height: 30px;
+background-color: transparent;
+  top: 572px;
+  left: 61px;
+  // transform: rotate(90deg);
+}
+.Slaider1_prev::after{
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 8px;
+  width: 9px;
+  height: 1px;
+  transform: rotate(45deg);
+  background-color: #FFFFFF;
+
+
+}
+.Slaider1_prev::before{
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 8px;
+  width: 9px;
+  height: 1px;
+  transform: rotate(145deg);
+  background-color: #FFFFFF;
+
+
+}
+.Slaider1_next{
+ 
+  top: 570px;
+  left: 354px;
+  border: #FFFFFF solid;
+  border-radius: 50%;
+  position: absolute;
+  width: 30px;
+height: 30px;
+background-color: transparent;
+}
+.Slaider1_next::after{
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 9px;
+  width: 9px;
+  height: 1px;
+  transform: rotate(135deg);
+  background-color: #FFFFFF;
+
+}.Slaider1_next::before{
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 9px;
+  width: 9px;
+  height: 1px;
+  transform: rotate(45deg);
+  background-color: #FFFFFF;
+}
+.Slaider1_next:active{
+  border-style: dashed;
+}
+.Slaider1_prev:active{
+  border-style: dashed;
+}
 
 
 
@@ -163,7 +273,7 @@
   }
 }
 
-@media screen and (max-width: 1500px) and (min-width:490px) {
+@media screen and (max-width: 2300px) and (min-width:490px) {
   .app-to-edit {
     width: 1250px;
     height: 534px;
@@ -182,6 +292,89 @@
     grid-template-rows: 35px 56px 56px 72px 48px 54px;
     align-content: space-between;
   }
+  .step3_Slaider {
+    width: max-content;
+    margin-left: 6%;
+    height: 167px;
+    background: radial-gradient(50% 2900.76% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211E2E 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
+    box-shadow: 0px 4px 4px rgba(192, 183, 232, 0.01);
+    border-radius: 90px;
+
+}
+.step_carusel-location,
+.step_carusel-phone,
+.step_carusel-emeil {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 12px;
+
+
+}
+
+.step_carusel-location>div,
+.step_carusel-phone>div .step_carusel-emeil>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.step_carusel-location>img {
+  // background: url('../img_app/claider1Location-Icon.png') no-repeat;
+  background-size: 100%;
+  width: 70px;
+  height: 70px;
+  margin-right: 23px;
+
+}
+.step_carusel-phone>img{
+  background-size: 100%;
+  width: 70px;
+  height: 70px;
+  margin-right: 23px;
+
+}
+.step_carusel-emeil>img{
+  background-size: 100%;
+  width: 70px;
+  height: 70px;
+  margin-right: 23px;
+
+}
+.step_carusel-location>div>span,
+.step_carusel-phone>div>span,
+.step_carusel-emeil>div>span {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+
+}
+.step_carusel-location>div>p,
+.step_carusel-phone>div>p,
+.step_carusel-emeil>div>p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+.step_carusel-location::after,
+.step_carusel-phone::after {
+    content: '';
+    width: 1px;
+    height: 116.5px;
+    border: 1px solid rgba(192, 183, 232, 0.33);
+}
+.step3_Slaider {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 
   .girl_in_vr {
     grid-area: img;
@@ -329,6 +522,15 @@
     z-index: -1;
 
   }
+.step3_mobile{
+  display: none;
+}
+.Slaider1_prev{
+  display: none;
 
+}
+.Slaider1_next{
+  display: none;
+}
 
 }

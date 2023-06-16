@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CarouselBasicComponent } from '../carousel-basic/carousel-basic.component';
 
 @Component({
   selector: 'app-about-inform',

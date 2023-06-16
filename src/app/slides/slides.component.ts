@@ -1,10 +1,7 @@
 
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
-import { register } from 'swiper/element/bundle';
-import SwiperCore, { Keyboard, Pagination, Navigation, Virtual } from 'swiper';
-
-SwiperCore.use([Keyboard, Pagination, Navigation, Virtual]);
+import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
+import { SlidePostInterface } from '../PostSlider/types/slidepost.interface';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'corp-slides',
@@ -12,15 +9,20 @@ SwiperCore.use([Keyboard, Pagination, Navigation, Virtual]);
   styleUrls: ['./slides.component.scss'],
   encapsulation: ViewEncapsulation.None,
 })
-export class SlidesComponent implements OnInit {
+export class SlidesComponent  {
 
-  slides$ = new BehaviorSubject<string[]>(['']);
+  @Input() slides: SlidePostInterface[]=[]
 
-  constructor() {}
-
-  ngOnInit(): void {
-    this.slides$.next(
-      Array.from({ length: 600 }).map((el, index) => `Slide ${index + 1}`)
-    );
+  constructor( private http:HttpClient ){
+    this.http.get('http://localhost:4223')
+    .subscribe((data)=> this.addusers(data));
   }
+ 
+  addusers(data: any){
+    this.slides=data;
+    console.log(this.slides);
+    
+  }
+
+ 
 }

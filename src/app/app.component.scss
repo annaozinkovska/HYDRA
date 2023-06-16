@@ -193,7 +193,7 @@ flex-direction: row;
     }
 }
 
-@media screen and (max-width: 1500px) and (min-width:490px) {
+@media screen and (max-width: 2300px) and (min-width:490px) {
     .header_menu {
         display: none;
     }
@@ -300,3 +300,5 @@ grid-template-rows:108px ;
         background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
     }
 }
+
+

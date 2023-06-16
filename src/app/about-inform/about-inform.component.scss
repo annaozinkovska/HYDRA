@@ -19,9 +19,10 @@
     grid-template-columns: 7% repeat(3, 25%) 7%;
     grid-template-rows: 59px 32px 16px 32px 36px 358px 5px 246px 34px 56px 60px;
    box-sizing: border-box;
-   margin: 1%;
-    margin-top: 59px;
+   margin: 23px 11%;
+   margin-top: 32%;
     position: relative;
+    box-sizing:content-box;
 
 
 }
@@ -102,7 +103,7 @@
 .step2_lorem>p {
     font-family: 'Montserrat';
     font-style: normal;
-
+text-align: left;
     box-sizing: border-box;
     color: #FFFFFF;
     font-weight: 400;
@@ -118,11 +119,12 @@
 }
 
 .step2_button {
-    padding: 0 10%;
+    // padding: 0 10%;
+    
     grid-area: button;
 }
 
-.step2_button>button {
+.step2_button{
     width: 276px;
     height: 56px;
     background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
@@ -134,12 +136,8 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 17px;
-    /* identical to box height */
-
 
     color: #343045;
-
-
 
 }
 
@@ -297,8 +295,6 @@ font-style: normal;
 font-weight: 700;
 font-size: 36px;
 line-height: 44px;
-/* identical to box height */
-
 grid-area: about;
 color: #FFFFFF;
     }
